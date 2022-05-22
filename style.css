@@ -1,0 +1,393 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.section1 {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0px;
+}
+.section1 .header-logo-honda {
+  display: block;
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: 10px;
+  left: 10%;
+  z-index: 1;
+}
+.section1 .header {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  justify-content: right;
+}
+.section1 .header .header-list {
+  list-style: none;
+  display: flex;
+}
+.section1 .header .header-list .link-header {
+  display: block;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  line-height: 25px;
+  position: relative;
+}
+.section1 .header .header-list .link-header .hover-link-header {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  background-color: #7e7c7c;
+  z-index: 3;
+  display: none;
+}
+.section1 .header .header-list .link-header .hover-link-header a {
+  display: block;
+  width: 175px;
+  height: 48px;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  padding-left: 10px;
+  border-top: ridge 1px;
+  line-height: 48px;
+}
+.section1 .header .header-list .link-header .hover-link-header a:hover {
+  background-color: #820202;
+}
+.section1 .header .header-list .link-header > a {
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+.section1 .header .header-list .link-header-fb-insta-yt > img {
+  display: block;
+  width: 100px;
+  height: 49px;
+  margin-top: -15px;
+  margin-right: 20px;
+}
+.section1 .navigation {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 50px;
+  background-color: #f32525;
+  z-index: -1;
+}
+.section1 .navigation .nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  padding-right: 40px;
+}
+.section1 .navigation .nav-list .nav-list-link {
+  display: block;
+  height: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #282424;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: -15px;
+  line-height: 50px;
+}
+.section1 .navigation .nav-list .nav-list-link:hover {
+  background-color: #5d0909;
+  color: white;
+  font-size: 19px;
+}
+
+.section2 {
+  width: 100%;
+  height: 30vw;
+  margin-top: 100px;
+  background-image: url(img/background-header.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.section3 .st3-left-columns {
+  width: 30%;
+  height: 60vw;
+  margin-right: 10px;
+  padding-top: 30px;
+}
+.section3 .st3-left-columns .container-img-st3 {
+  width: 100%;
+  height: 23vw;
+  background-image: url(img/imgst3.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.section3 .st3-left-columns .st3-left-columns-view {
+  display: block;
+  text-decoration: none;
+  width: 40%;
+  height: 50px;
+  line-height: 50px;
+  color: #000000;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fbe04b;
+  font-weight: 700;
+  font-size: 17px;
+}
+.section3 .st3-left-columns .st3-left-columns-view:hover {
+  background-color: #76f6f5;
+  font-size: 20px;
+}
+.section3 .st3-center-columns {
+  width: 40%;
+  height: 750px;
+  overflow: hidden;
+}
+.section3 .st3-center-columns h1 {
+  color: red;
+  font-size: 30px;
+  text-align: center;
+}
+.section3 .st3-center-columns h2 {
+  text-align: center;
+}
+.section3 .st3-center-columns .st3-center-information {
+  width: 100%;
+  height: 600px;
+  background-color: #cecece;
+  border-top: red solid 3px;
+  border-radius: 2%;
+}
+.section3 .st3-center-columns .st3-center-information p {
+  height: 30px;
+  line-height: 30px;
+  background-color: red;
+  padding-left: 10px;
+  color: #02121f;
+  font-weight: 700;
+}
+.section3 .st3-center-columns .st3-center-information p i {
+  display: inline-block;
+  width: 20px;
+  margin-right: 10px;
+  animation-duration: 3s;
+}
+.section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 {
+  display: none;
+  flex-wrap: wrap;
+}
+.section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1 .article-overview, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2 .article-overview, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 .article-overview {
+  width: 33.3333333333%;
+  padding: 0px 5px;
+  display: block;
+}
+.section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1 .article-overview .design-img1, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2 .article-overview .design-img1, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 .article-overview .design-img1 {
+  background-image: url(img/img-design1.jpg);
+  height: 130px;
+  background-size: cover;
+  background-position: center center;
+}
+.section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1 .article-overview .design-img2, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2 .article-overview .design-img2, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 .article-overview .design-img2 {
+  background-image: url(img/img-design2.jpg);
+  height: 130px;
+  background-size: cover;
+  background-position: center center;
+}
+.section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1 .article-overview .design-img3, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2 .article-overview .design-img3, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 .article-overview .design-img3 {
+  background-image: url(img/imgdesign3.png);
+  height: 130px;
+  background-size: cover;
+  background-position: center center;
+}
+.section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1 .article-overview .design-img4, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2 .article-overview .design-img4, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 .article-overview .design-img4 {
+  background-image: url(img/imgdesign4.png);
+  height: 130px;
+  background-size: cover;
+  background-position: center center;
+}
+.section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1 .article-overview .design-img5, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2 .article-overview .design-img5, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 .article-overview .design-img5 {
+  background-image: url(img/img-design5.jpg);
+  height: 130px;
+  background-size: cover;
+  background-position: center center;
+}
+.section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1 .article-overview .design-img6, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2 .article-overview .design-img6, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 .article-overview .design-img6 {
+  background-image: url(img/img-design6.jpg);
+  height: 130px;
+  background-size: cover;
+  background-position: center center;
+}
+.section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1 .article-overview .tech-img1, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2 .article-overview .tech-img1, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 .article-overview .tech-img1 {
+  background-image: url(img/img-tech1.png);
+  height: 130px;
+  background-size: cover;
+  background-position: center center;
+}
+.section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1 .article-overview .tech-img2, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2 .article-overview .tech-img2, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 .article-overview .tech-img2 {
+  background-image: url(img/img-tech2.png);
+  height: 130px;
+  background-size: cover;
+  background-position: center center;
+}
+.section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1 .article-overview .tech-img3, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2 .article-overview .tech-img3, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 .article-overview .tech-img3 {
+  background-image: url(img/img-tech3.jpg);
+  height: 130px;
+  background-size: cover;
+  background-position: center center;
+}
+.section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1 .article-overview .safety-img1, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2 .article-overview .safety-img1, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 .article-overview .safety-img1 {
+  background-image: url(img/img-safety1.png);
+  height: 130px;
+  background-size: cover;
+  background-position: center center;
+}
+.section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1 .article-overview .safety-img2, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2 .article-overview .safety-img2, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 .article-overview .safety-img2 {
+  background-image: url(img/img-safety2.png);
+  height: 130px;
+  background-size: cover;
+  background-position: center center;
+}
+.section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1 .article-overview .safety-img3, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2 .article-overview .safety-img3, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 .article-overview .safety-img3 {
+  background-image: url(img/img-safety3.jpg);
+  height: 130px;
+  background-size: cover;
+  background-position: center center;
+}
+.section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1 .article-overview .safety-img4, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2 .article-overview .safety-img4, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 .article-overview .safety-img4 {
+  background-image: url(img/img-safety4.jpg);
+  height: 130px;
+  background-size: cover;
+  background-position: center center;
+}
+.section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1 .article-overview .safety-img5, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2 .article-overview .safety-img5, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 .article-overview .safety-img5 {
+  background-image: url(img/img-safety5.jpg);
+  height: 130px;
+  background-size: cover;
+  background-position: center center;
+}
+.section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1 .tech-text, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1 .design-text, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information1 .safety-text, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2 .tech-text, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2 .design-text, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information2 .safety-text, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 .tech-text, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 .design-text, .section3 .st3-center-columns .st3-center-information .img-text-st3-center-information3 .safety-text {
+  color: #0707d5;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.section3 .st3-right-columns {
+  width: 30%;
+  height: 750px;
+  padding-left: 10px;
+}
+.section3 .st3-right-columns h1 {
+  color: red;
+  font-size: 30px;
+  text-align: center;
+}
+.section3 .st3-right-columns .st3-right-columns-text {
+  display: none;
+  justify-content: center;
+}
+.section3 .st3-right-columns .st3-right-columns-text h2 {
+  text-align: center;
+}
+.section3 .st3-right-columns .st3-right-columns-text p {
+  background-color: #89c8c2;
+  line-height: 25px;
+  padding: 15px;
+  border-radius: 7%;
+  color: #490455;
+}
+
+.section4 {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -150px;
+}
+.section4 .container-price-color {
+  display: flex;
+  justify-content: center;
+  border-top: solid 3px red;
+}
+.section4 .container-price-color .container-price {
+  width: 50%;
+}
+.section4 .container-price-color .container-price .st4-img-color {
+  height: 500px;
+  background-image: url(img/den-db.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+.section4 .container-price-color .container-color {
+  width: 50%;
+}
+.section4 .container-price-color .container-color .edition {
+  font-weight: 700;
+}
+.section4 .container-price-color .container-color .flex-color-value {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section4 .container-price-color .container-color .flex-color-value .color-value {
+  width: 300px;
+  display: flex;
+  cursor: pointer;
+}
+.section4 .container-price-color .container-color .flex-color-value .color-value .color-cell-black-edition {
+  background-color: #000000;
+  width: 75px;
+  height: 25px;
+  transform: skewX(-30deg);
+}
+.section4 .container-price-color .container-color .flex-color-value .color-value .color-cell-red-black-standard1 {
+  background-color: #ff0000;
+  width: 39px;
+  height: 25px;
+  transform: skewX(-30deg);
+  margin-right: 1px;
+}
+.section4 .container-price-color .container-color .flex-color-value .color-value .color-cell-red-black-standard2 {
+  background-color: #000000;
+  width: 39px;
+  height: 25px;
+  transform: skewX(-30deg);
+}
+.section4 .container-price-color .container-color .flex-color-value .color-value .color-cell-darkblue-black-standard1 {
+  background-color: #00008a;
+  width: 39px;
+  height: 25px;
+  transform: skewX(-30deg);
+  margin-right: 1px;
+}
+.section4 .container-price-color .container-color .flex-color-value .color-value .color-cell-darkblue-black-standard2 {
+  background-color: #000000;
+  width: 39px;
+  height: 25px;
+  transform: skewX(-30deg);
+}
+.section4 .container-price-color .container-color .flex-color-value .color-value .name-edition {
+  margin-left: 20px;
+  height: 25px;
+  line-height: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */

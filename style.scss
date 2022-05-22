@@ -1,0 +1,344 @@
+*{
+box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.section1 {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    .header-logo-honda {
+        display: block;
+        width: 100px;
+        height: 80px;
+        position: absolute;
+        top: 10px;
+        left: 10%;
+        z-index: 1;
+    }
+    .header {
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        display: flex;
+        justify-content: right;
+        .header-list {
+            list-style: none;
+            display: flex;
+            .link-header {
+                display: block;
+                color: black;
+                font-size: 14px;
+                text-decoration: none;
+                margin-left: 5px;
+                margin-right: 5px;
+                line-height: 25px;
+                position: relative;
+                .hover-link-header {
+                    display: block;
+                    position: absolute;
+                    top: 20px;
+                    right: 0px;
+                    background-color: #7e7c7c;
+                    z-index: 3;
+                    display: none;
+                    a {
+                        display: block;
+                        width: 175px;
+                        height: 48px;
+                        text-decoration: none;
+                        color: white;
+                        font-size: 17px;
+                        font-weight: 500;
+                        padding-left: 10px;
+                        border-top: ridge 1px;
+                        line-height: 48px;
+                    }
+                    a:hover {
+                        background-color: #820202;
+                    }
+                }
+            }
+            .link-header>a {
+                display: block;
+                font-size: 14px;
+                text-decoration: none;
+                color: black;
+            }
+            .link-header-fb-insta-yt>img {
+                display: block;
+                width: 100px;
+                height: 49px;
+                margin-top: -15px;
+                margin-right: 20px;
+            }
+        }
+    }
+    .navigation {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        top: 50px;
+        background-color: #f32525;
+        z-index: -1;
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: right;
+            padding-right: 40px;
+            .nav-list-link {
+                display: block;
+                height: 50px;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 600;
+                color: #282424;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-top: -15px;
+                line-height: 50px;
+            }
+            .nav-list-link:hover {
+                background-color: #5d0909;
+                color: white;
+                font-size: 19px;
+            }
+        }
+    }
+}
+.section2 {
+    width: 100%;
+    height: 30vw;
+    margin-top: 100px;
+    background-image: url(img/background-header.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .st3-left-columns {
+        width: 30%;
+        height: 60vw;
+        margin-right: 10px;
+        padding-top: 30px;
+        .container-img-st3 {
+            width: 100%;
+            height: 23vw;
+            background-image: url(img/imgst3.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+        .st3-left-columns-view {
+            display: block;
+            text-decoration: none;
+            width: 40%;
+            height: 50px;
+            line-height: 50px;
+            color: #000000;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #fbe04b;
+            font-weight: 700;
+            font-size: 17px;
+        }
+        .st3-left-columns-view:hover {
+            background-color: #76f6f5;
+            font-size: 20px;
+        }
+    }
+    .st3-center-columns {
+        width: 40%;
+        height: 750px;
+        overflow: hidden;
+        h1 {
+            color: red;
+            font-size: 30px;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        .st3-center-information {
+            width: 100%;
+            height: 600px;
+            background-color: #cecece;
+            border-top: red solid 3px;
+            border-radius: 2%;
+            p {
+                height: 30px;
+                line-height: 30px;
+                background-color: red;
+                padding-left: 10px;
+                color: #02121f;
+                font-weight: 700;
+                i {
+                    display: inline-block;
+                    width: 20px;
+                    margin-right: 10px;
+                    animation-duration: 3s;
+                }
+            }
+            .img-text-st3-center-information1, .img-text-st3-center-information2, .img-text-st3-center-information3 {
+                display: none;
+                flex-wrap: wrap;
+                .article-overview {
+                    width: calc(100%/3);
+                    padding: 0px 5px;
+                    display: block;
+                    @mixin article-overview-img($url) {
+                        background-image: $url;
+                        height: 130px;
+                        background-size: cover;
+                        background-position: center center;
+                    }
+                    .design-img1 {
+                        @include article-overview-img(url(img/img-design1.jpg));
+                    }
+                    .design-img2 {
+                        @include article-overview-img(url(img/img-design2.jpg));
+                    }
+                    .design-img3 {
+                        @include article-overview-img(url(img/imgdesign3.png));
+                    }
+                    .design-img4 {
+                        @include article-overview-img(url(img/imgdesign4.png));
+                    }
+                    .design-img5 {
+                        @include article-overview-img(url(img/img-design5.jpg));
+                    }
+                    .design-img6 {
+                        @include article-overview-img(url(img/img-design6.jpg));
+                    }
+                    .tech-img1 {
+                        @include article-overview-img(url(img/img-tech1.png));
+                    }
+                    .tech-img2 {
+                        @include article-overview-img(url(img/img-tech2.png));
+                    }
+                    .tech-img3 {
+                        @include article-overview-img(url(img/img-tech3.jpg))
+                    }
+                    .safety-img1 {
+                        @include article-overview-img(url(img/img-safety1.png));
+                    }
+                    .safety-img2 {
+                        @include article-overview-img(url(img/img-safety2.png));
+                    }
+                    .safety-img3 {
+                        @include article-overview-img(url(img/img-safety3.jpg));
+                    }
+                    .safety-img4 {
+                        @include article-overview-img(url(img/img-safety4.jpg));
+                    }
+                    .safety-img5 {
+                        @include article-overview-img(url(img/img-safety5.jpg));
+                    }
+                }
+                .tech-text, .design-text, .safety-text {
+                    color: #0707d5;
+                    text-align: center;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    .st3-right-columns {
+        width: 30%;
+        height: 750px;
+        padding-left: 10px;
+        h1 {
+            color: red;
+            font-size: 30px;
+            text-align: center;
+        }
+        .st3-right-columns-text {
+            display: none;
+            justify-content: center;
+            h2 {
+                text-align: center;
+            }
+            p {
+                background-color: #89c8c2;
+                line-height: 25px;
+                padding: 15px;
+                border-radius: 7%;
+                color: #490455;
+            }
+        }
+    }
+}
+.section4 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -150px;
+    .container-price-color {
+        display: flex;
+        justify-content: center;
+        border-top: solid 3px red;
+        .container-price {
+            width: 50%;
+            .st4-img-color {
+                height: 500px;
+                background-image: url(img/den-db.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center bottom;
+            }
+        }
+        .container-color {
+            width: 50%;
+            .edition {
+                font-weight: 700;
+            }
+            .flex-color-value {
+                display: flex;
+                flex-wrap: wrap;
+                .color-value {
+                    width: 300px;
+                    display: flex;
+                    cursor: pointer;
+                    @mixin color-cell($colorValue, $width) {
+                        background-color: $colorValue;                      
+                        width: $width;
+                        height: 25px;
+                        transform: skewX(-30deg);
+                    }
+                    .color-cell-black-edition {
+                        @include color-cell(#000000, 75px);
+                    }
+                    .color-cell-red-black-standard1 {
+                        @include color-cell(#ff0000, 39px);
+                        margin-right: 1px;
+                    }
+                    .color-cell-red-black-standard2 {
+                        @include color-cell(#000000, 39px);
+                    }
+                    .color-cell-darkblue-black-standard1 {
+                        @include color-cell(#00008a, 39px);
+                        margin-right: 1px;
+                    }
+                    .color-cell-darkblue-black-standard2 {
+                        @include color-cell(#000000, 39px);
+                    }
+                    .name-edition {
+                        margin-left: 20px;
+                        height: 25px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
