@@ -11,6 +11,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <section class="st3-fullview">
+        <div class="st3-fullview-bgimg">
+            <div class="slide container-img1"></div>
+            <div class="slide container-img2"></div>
+            <div class="slide container-img3"></div>
+            <div class="slide container-img4"></div>
+            <div class="slide container-img5"></div>
+            <div class="slide container-img6"></div>
+            <div class="slide container-img7"></div>
+            <div class="slide container-img8"></div>
+            <div class="slide container-img9"></div>
+            <div class="slide container-img10"></div>
+            <div class="slide container-img11"></div>
+        </div>
+        <div class="st3-fullview-content">
+            <p class="content">Hệ thống đèn LED toàn phần, phiên bản 160cc thêm phần ốp trang trí đầu xe thể thao</p>
+            <p class="content">Ngoại hình thể thao, cá tính, pha chút sự thanh lịch</p>
+            <p class="content">Phanh ABS ở bánh trước cho phiên bản Air Blade 160cc</p>
+            <p class="content">Phanh kết hợp CBS cho phiên bản Air Blade 125cc</p>
+            <p class="content">Yên xe 2 tông màu trên phiên bản Air Blade 160cc</p>
+            <p class="content">Đèn hậu LED hiện đại, sắc sảo</p>
+            <p class="content">Cụm tay lái nổi bật với màn hình trung tâm LCD đa sắc</p>
+            <p class="content">Hệ thống khóa thông minh Smartkey</p>
+            <p class="content">Cốp xe rộng rãi dung tích 23,2 lít, chứa được 2 mũ bảo hiểm nửa đầu. Cốp xe được trang bị cổng sạc USB và đèn soi</p>
+            <p class="content">Ống xả vuốt cao, có vè bảo vệ</p>
+            <p class="content">Động cơ eSP+ 4 van 125cc/160cc</p>
+        </div>
+        <div class="st3-fullview-toolbar">
+            <a href="#" onclick="closeDetail()" title="Đóng" on>X</a>
+            <a href="#" onclick="nextSlide()" title="Tiếp">-></a>
+            <a href="#" onclick="previousSlide()" title="Trước"><-</a>
+        </div>
+    </section>
     <section class="section1">
         <img class="header-logo-honda" src="img/logo-honda.webp">
         <div class="header">
@@ -84,7 +117,7 @@
         <div class="st3-left-columns">
             <div class="container-img-st3">
             </div>
-            <a href="#" class="st3-left-columns-view">Xem chi tiết</a>
+            <a href="#" class="st3-left-columns-view" onclick="blockDetail()">Xem chi tiết</a>
         </div>
         <div class="st3-center-columns">
             <h1>Air Blade 125/160</h1>
@@ -114,22 +147,22 @@
                     </article>
                     <article class="article-overview">
                         <div class="design-img6"></div>
-                        <div class="design-text">Bình xăng phía trước, thiết kế tối ưu cho không gian cốp xe rộng rãi</div>
+                        <div class="design-text">Bình xăng phía trước tiện lợi, tối ưu cho không gian cốp xe rộng rãi</div>
                     </article>
                 </div>
                 <p class="st3-center-information-tech" onclick="blockTech()">ĐỘNG CƠ & CÔNG NGHỆ <i class="fa fa-angle-down"></i></p>
                 <div class="img-text-st3-center-information2">
                     <article class="article-overview">
                         <div class="tech-img1"></div>
-                        <div class="tech-text">Động cơ eSP 125cc/150cc</div>
+                        <div class="tech-text">Động cơ eSP+ 4 van 125cc/160cc</div>
                     </article>
                     <article class="article-overview">
                         <div class="tech-img2"></div>
-                        <div class="tech-text">Khả năng tăng tốc ấn tượng</div>
+                        <div class="tech-text">Động cơ đạt chuẩn khí thải euro 3, tiết kiệm nhiên liệu</div>
                     </article>
                     <article class="article-overview">
                         <div class="tech-img3"></div>
-                        <div class="tech-text">Tiết kiệm nhiên liệu tối ưu (125cc: 1,99l/100km, 150cc: 2,17l/100km)</div>
+                        <div class="tech-text">Công nghệ Idling Stop, bộ đề ACG</div>
                     </article>
                 </div>
                 <p class="st3-center-information-safety" onclick="blockSafety()">TIỆN ÍCH & AN TOÀN <i class="fa fa-angle-down"></i></p>
@@ -140,7 +173,7 @@
                     </article>
                     <article class="article-overview">
                         <div class="safety-img2"></div>
-                        <div class="safety-text">Hệ thống chống bó cứng phanh ABS(dành cho phiên bản 150cc)</div>
+                        <div class="safety-text">Hệ thống phanh kết hợp CBS trên phiên bản 125cc, chống bó cứng phanh ABS trên phiên bản 160cc</div>
                     </article>
                     <article class="article-overview">
                         <div class="safety-img3"></div>
@@ -148,7 +181,7 @@
                     </article>
                     <article class="article-overview">
                         <div class="safety-img4"></div>
-                        <div class="safety-text">Cổng sạc tiện lợi(dành cho phiên bản 150cc)</div>
+                        <div class="safety-text">Cổng sạc USB tiện lợi</div>
                     </article>
                     <article class="article-overview">
                         <div class="safety-img5"></div>
@@ -165,12 +198,12 @@
             </div>
             <div class="st3-right-columns-text">
                 <h2>Động cơ & công nghệ</h2>
-                <p>Bên cạnh động cơ 125cc cho khả năng tiết kiệm nhiên liệu hiệu quả, còn có phiên bản 150cc sử dụng động cơ eSP với lọc gió và ống xả xe được điều chỉnh một cách đặc biệt nhằm mang đến cho động cơ 150cc cảm giác máy phấn khích lẫn công suất mạnh mẽ vượt trội nhưng vẫn tiết kiệm nhiên liệu tối ưu, nhờ đó khách hàng có thể tăng tốc xe nhanh hơn</p>
+                <p>Air Blade sử dụng động cơ 4 van eSP+. Bên cạnh động cơ 125cc cho khả năng tiết kiệm nhiên liệu hiệu quả, còn có phiên bản 160cc với lọc gió và ống xả xe được điều chỉnh một cách đặc biệt cho cảm giác máy phấn khích lẫn công suất mạnh mẽ vượt trội nhưng vẫn tiết kiệm nhiên liệu tối ưu, nhờ đó khách hàng có thể tăng tốc xe nhanh hơn</p>
             </div>
             <div class="st3-right-columns-text">
                 <h2>Tiện ích & an toàn</h2>
-                <p>Honda Air Blade 150cc/125cc được tích hợp nhiều tiện ích cao cấp. Nổi bật là hệ thống khóa Honda SMART Key được trang bị trên cả 2 phiên bản, có chức năng báo chống trộm giúp khách hàng yên tâm hơn khi không ở bên cạnh xe, giúp mang lại sự an tâm và tiện ích cao cho người dùng so với hệ thống khóa thông thường.
-                Phiên bản động cơ 150cc sở hữu Hệ thống chống bó cứng ABS cho bánh trước. ABS hoạt động hiệu quả khi người lái bóp phanh trước, giúp ổn định tư thế của xe bằng cách chống khóa cứng bánh xe, đặc biệt trong điều kiện đường trơn ướt hay gồ ghề. ABS sẽ là tiện ích đem lại sự hài lòng và an tâm cao, nâng tầm trải nghiệm lái cho người dùng trên mọi hành trình. Cổng sạc trên phiên bản động cơ 150cc giúp khách hàng có thể sạc điện thoại khi thật sự cần thiết. </p>
+                <p>Honda Air Blade 125cc/160cc được tích hợp nhiều tiện ích cao cấp. Nổi bật là hệ thống khóa Honda SMART Key được trang bị trên cả 2 phiên bản, có chức năng báo chống trộm giúp khách hàng yên tâm hơn khi không ở bên cạnh xe, giúp mang lại sự an tâm và tiện ích cao cho người dùng so với hệ thống khóa thông thường. Air Blade được trang bị hệ thống phanh tiên tiến, an toàn. Phiên bản động cơ 125cc trang bị hệ thống phanh CBS, giúp phân bổ lực phanh đều cho cả 2 bánh xe, an toàn khi phanh gấp.
+                Phiên bản động cơ 160cc sở hữu hệ thống phanh ABS cho bánh trước. ABS hoạt động hiệu quả khi người lái bóp phanh trước, giúp ổn định tư thế của xe bằng cách chống khóa cứng bánh xe, đặc biệt trong điều kiện đường trơn ướt hay gồ ghề. Cổng sạc trên cả 2 phiên bản giúp khách hàng có thể sạc các thiết bị điện tử khi cần thiết. </p>
             </div>
         </div>
     </section>

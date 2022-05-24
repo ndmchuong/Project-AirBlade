@@ -110,4 +110,39 @@ function blockSafety() {
         textSafety[2].style.display = "none";
     }
 }
+let index = 0;
+let image = document.getElementsByClassName("slide");
+let content = document.getElementsByClassName("content");
+
+function blockDetail() {
+    let detail = document.getElementsByClassName("st3-fullview");
+    detail[0].style.display = "flex";
+    image[index].style.display = "block";
+    content[index].style.display = "block";
+}
+function closeDetail() {
+    let detail = document.getElementsByClassName("st3-fullview");
+    detail[0].style.display = "none";
+}
+
+function nextSlide() {
+    image[index].style.display = "none";
+    content[index].style.display = "none";
+    index += 1;
+    if (index > 10) {
+        index = 0;
+    }
+    image[index].style.display = "block";
+    content[index].style.display = "block";
+}
+function previousSlide() {
+    image[index].style.display = "none";
+    content[index].style.display = "none";
+    index -= 1;
+    if (index < 0) {
+        index = 10;
+    }
+    image[index].style.display = "block";
+    content[index].style.display = "block";
+}
 

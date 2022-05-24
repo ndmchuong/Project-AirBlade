@@ -1,9 +1,113 @@
 *{
 box-sizing: border-box;
 }
-body {
+html, body {
     margin: 0;
+    width: 100%;
+    height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.st3-fullview {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #000000;
+    .st3-fullview-bgimg {
+        width: 75%;
+        @mixin container-img($url) {
+            width: 90%;
+            height: 45vw;
+            background-image: $url;
+            background-size: 100% 100%;
+            background-position: center;
+            margin: 0 auto;
+            display: none;
+        }
+        .slide {
+            animation-name: slide;
+            animation-duration: 1.5s
+        }
+        .container-img1 {
+            @include container-img(url(img/fullscreen1.jpg));
+        }
+        .container-img2 {
+            @include container-img(url(img/fullscreen2.webp));
+        }
+        .container-img3 {
+            @include container-img(url(img/fullscreen3.jpg));
+        }
+        .container-img4 {
+            @include container-img(url(img/fullscreen4.webp));
+        }
+        .container-img5 {
+            @include container-img(url(img/fullscreen5.jpg));
+        }
+        .container-img6 {
+            @include container-img(url(img/fullscreen6.jpg));
+        }
+        .container-img7 {
+            @include container-img(url(img/fullscreen7.jpg));
+        }
+        .container-img8 {
+            @include container-img(url(img/fullscreen8.jpg));
+        }
+        .container-img9 {
+            @include container-img(url(img/fullscreen9.jpg));
+        }
+        .container-img10 {
+            @include container-img(url(img/fullscreen10.jpg));
+        }
+        .container-img11 {
+            @include container-img(url(img/fullscreen11.jpg));
+        }
+    }
+    .st3-fullview-content {
+        width: 20%;
+        .content {
+            color: #cecece;
+            font-size: 20px;
+            font-weight: 600;
+            padding-left: 10px;
+            padding-right: 20px;
+            padding-top: 50px;
+            display: none;
+            animation-name: slide;
+            animation-duration: 1.5s;
+        }
+        @keyframes slide {
+            from {
+                opacity: 0.4;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    }
+    .st3-fullview-toolbar {
+        width: 5%;
+        a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+            width: 60%;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            background-color: #7e7c7c;
+            margin-top: 50px;
+            opacity: 0.7;
+            color: red;
+        }
+        a:hover {
+            opacity: 1;
+        }
+    }
 }
 .section1 {
     width: 100%;
@@ -207,10 +311,10 @@ body {
                         @include article-overview-img(url(img/img-design2.jpg));
                     }
                     .design-img3 {
-                        @include article-overview-img(url(img/imgdesign3.png));
+                        @include article-overview-img(url(img/img-design3.jpg));
                     }
                     .design-img4 {
-                        @include article-overview-img(url(img/imgdesign4.png));
+                        @include article-overview-img(url(img/img-design4.jpg));
                     }
                     .design-img5 {
                         @include article-overview-img(url(img/img-design5.jpg));
@@ -219,19 +323,19 @@ body {
                         @include article-overview-img(url(img/img-design6.jpg));
                     }
                     .tech-img1 {
-                        @include article-overview-img(url(img/img-tech1.png));
+                        @include article-overview-img(url(img/img-tech1.jpg));
                     }
                     .tech-img2 {
-                        @include article-overview-img(url(img/img-tech2.png));
+                        @include article-overview-img(url(img/img-tech2.jpg));
                     }
                     .tech-img3 {
                         @include article-overview-img(url(img/img-tech3.jpg))
                     }
                     .safety-img1 {
-                        @include article-overview-img(url(img/img-safety1.png));
+                        @include article-overview-img(url(img/img-safety1.jpg));
                     }
                     .safety-img2 {
-                        @include article-overview-img(url(img/img-safety2.png));
+                        @include article-overview-img(url(img/img-safety2.jpg));
                     }
                     .safety-img3 {
                         @include article-overview-img(url(img/img-safety3.jpg));
