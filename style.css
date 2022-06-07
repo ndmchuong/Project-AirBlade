@@ -942,6 +942,7 @@ body .section4 .st4-container-price .st4-content-price .price-edition {
     top: -500px;
     padding: 0;
     min-height: 400px;
+    max-width: 150px;
   }
   body .section1 .header .header-list-responsive .link-header img {
     margin-top: 0px;
@@ -966,7 +967,7 @@ body .section4 .st4-container-price .st4-content-price .price-edition {
     max-width: 250px;
     position: absolute;
     top: -500px;
-    left: 150px;
+    left: 120px;
   }
   body .section1 .menu {
     display: block;
