@@ -4,15 +4,15 @@ function blockMenu() {
     if (indexMenu > 1) {
         indexMenu = 0;
     }
-    let headerList = document.getElementsByClassName("header-list");
-    let navList = document.getElementsByClassName("nav-list");
+    let headerList = document.getElementsByClassName("header-list-responsive");
+    let navList = document.getElementsByClassName("nav-list-responsive");
     if (indexMenu == 1) {
-        headerList[1].style.opacity = "1";
-        navList[1].style.display = "block";
+        headerList[0].style.top = "64px";
+        navList[0].style.top = "24px";
     }
     if (indexMenu == 0) {
-        headerList[1].style.opacity = "0";
-        navList[1].style.display = "none";
+        headerList[0].style.top = "-500px";
+        navList[0].style.top = "-500px";
         
     }
     
